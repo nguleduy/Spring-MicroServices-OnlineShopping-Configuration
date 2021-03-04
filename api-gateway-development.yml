@@ -1,0 +1,17 @@
+server:
+  port: 5555
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  prefix:
+  routes:
+    customersApi:
+      serviceId: CUSTOMER-SERVICE
+    itemsApi:
+      serviceId: ITEM-SERVICE
+    salesApi:
+      serviceId: SALES-ORDER-SERVICE

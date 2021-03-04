@@ -1,8 +1,8 @@
 server:
-  port: 5051
+  port: 5052
 
 db:
-  name: customer_db
+  name: item_db
 
 spring:
   h2:
